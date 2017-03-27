@@ -60,9 +60,6 @@
 	    color: {type: 'color', default: '#fff'}
 	  },
 
-	  /**
-	   * Called once when component is attached. Generally for initial setup.
-	   */
 	  init: function () {
 	    var material = this.material = new THREE.LineBasicMaterial({color: this.data.color});
 	    var geometry = this.geometry = new THREE.BufferGeometry();
@@ -72,10 +69,6 @@
 	    this.el.setObject3D('line', this.line);
 	  },
 
-	  /**
-	   * Called when component is attached and when component data changes.
-	   * Generally modifies the entity based on the data.
-	   */
 	  update: function (oldData) {
 	    var data = this.data;
 	    var diff = AFRAME.utils.diff(data, oldData);
