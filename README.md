@@ -7,6 +7,8 @@ A Line component for A-Frame.
 
 For [A-Frame](https://aframe.io).
 
+![line example](https://raw.githubusercontent.com/fernandojsg/aframe-line-component/master/screenshot.png)
+
 ### API
 
 | Property | Description | Default Value |
