@@ -32,7 +32,7 @@ Install and use by directly including the [browser files](dist):
 
 <body>
   <a-scene>
-    <a-entity line="foo: bar"></a-entity>
+    <a-entity line="start: 1 2 3; end: 4 5 6; color: #ff0"></a-entity>
   </a-scene>
 </body>
 ```
