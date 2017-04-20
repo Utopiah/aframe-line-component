@@ -16,6 +16,7 @@ For [A-Frame](https://aframe.io).
 | start         | Start line position            | 0 0 0               |
 | end         | End line position            | 0 0 0               |
 | color         | Line color            | #fff               |
+| opacity         | Line opacity            | 1               |
 
 ### Installation
 
