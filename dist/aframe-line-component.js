@@ -57,11 +57,16 @@
 	  schema: {
 	    start: {type: 'vec3', default: '0 0 0'},
 	    end: {type: 'vec3', default: '0 0 0'},
-	    color: {type: 'color', default: '#fff'}
+	    color: {type: 'color', default: '#fff'},
+	    opacity: {type: 'number', default: '1'}
 	  },
 
 	  init: function () {
-	    var material = this.material = new THREE.LineBasicMaterial({color: this.data.color});
+	    var material = this.material = new THREE.LineBasicMaterial({
+	      color: this.data.color,
+	      opacity: this.data.opacity,
+	      transparent: this.data.opacity < 1
+	    });
 	    var geometry = this.geometry = new THREE.BufferGeometry();
 	    geometry.addAttribute('position', new THREE.BufferAttribute(new Float32Array(2 * 3), 3));
 
@@ -83,6 +88,7 @@
 	      pos[4] = data.end.y;
 	      pos[5] = data.end.z;
 	      this.geometry.attributes.position.needsUpdate = true;
+	      this.geometry.computeBoundingSphere();
 	    }
 
 	    this.material.color.setStyle(data.color);

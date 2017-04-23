@@ -1,6 +1,6 @@
 {
   "name": "aframe-line-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Line component for A-Frame.",
   "main": "index.js",
   "cdn": "dist/aframe-line-component.min.js",
