@@ -1,3 +1,5 @@
+This component is now part of [A-Frame core](https://aframe.io/docs/master/components/line.html).
+
 ## aframe-line-component
 
 [![Version](http://img.shields.io/npm/v/aframe-line-component.svg?style=flat-square)](https://npmjs.org/package/aframe-line-component)
